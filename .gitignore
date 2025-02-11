@@ -1,0 +1,7 @@
+MICHELANGELO_ETC_transiting_annotated_with_tests_Lband.ipynb
+MICHELANGELO_ETC_transiting_annotated_with_tests_Mband.ipynb
+Preparazione_per_conteggi.rtfd
+etc_input_files/*
+output_CRIRES_ETC_command_line/*
+!etc_input_files/.gitkeep
+!output_CRIRES_ETC_command_line/.gitkeep
