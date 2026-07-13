@@ -1,0 +1,95 @@
+{
+    "target": {
+        "morphology": {
+            "morphologytype": "point"
+        },
+        "sed": {
+            "sedtype": "spectrum",
+            "spectrum": {
+                "spectrumtype": "blackbody",
+                "params": {
+                    "temperature": 7500
+                }
+            },
+            "extinctionav": 0,
+            "temperature": 7500.0
+        },
+        "brightness": {
+            "brightnesstype": "mag",
+            "magband": "K",
+            "mag": 6.41,
+            "magsys": "vega"
+        }
+    },
+    "sky": {
+        "airmass": 1.2,
+        "moon_fli": 0.5,
+        "pwv": 2.5
+    },
+    "seeingiqao": {
+        "mode": "aongs",
+        "aperturepix": 15,
+        "params": {
+            "gsmag": 6.2,
+            "turbulence_category": 50
+        }
+    },
+    "instrument": {
+        "slit": 0.2,
+        "settingkey": "L3244",
+        "polarimetry": "free",
+        "order": [
+            20,
+            19,
+            18,
+            17,
+            16,
+            15,
+            14
+        ]
+    },
+    "timesnr": {
+        "DET1.NDIT": 1,
+        "DET1.DIT": 300
+    },
+    "output": {
+        "throughput": {
+            "atmosphere": true,
+            "telescope": true,
+            "instrument": true,
+            "blaze": true,
+            "enslittedenergy": true,
+            "detector": true,
+            "totalinclsky": true
+        },
+        "snr": {
+            "snr": true,
+            "noise_components": true
+        },
+        "sed": {
+            "target": true,
+            "sky": true
+        },
+        "signals": {
+            "obstarget": true,
+            "obssky": true,
+            "obstotal": true
+        },
+        "maxsignals": {
+            "maxpixeltarget": true,
+            "maxpixelsky": true,
+            "maxpixeltotal": true
+        },
+        "dispersion": {
+            "dispersion": true
+        },
+        "psf": {
+            "psf": true
+        },
+        "maxSignals": {
+            "snr": true,
+            "noise_components": true
+        }
+    },
+    "instrumentName": "crires2"
+}
