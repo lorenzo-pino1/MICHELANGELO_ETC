@@ -84,7 +84,7 @@ def getEtcUrl(etcname):
     if '4most' in etcname.lower() or 'qmost' in etcname.lower() or 'fourmost' in etcname.lower():
         return 'Fourmost/'
     elif 'crires' in etcname.lower():
-        return 'Crires2/'
+        return 'Crires/'
     else:  # normal case
         return etcname.lower().capitalize() + '/'
 
@@ -142,13 +142,16 @@ def main():
                          'https://etctest.hq.eso.org',
                          'http://localhost:8000'
                          ]
-    if args.server in supported_servers:
-        baseurl = args.server + '/observing/etc/etcapi/'
-    else:
+    if args.server not in supported_servers:
         print('not supported: ' + args.server)
         print('supported servers:\n')
         print(*supported_servers, sep='\n')
         sys.exit(1)
+
+    if args.server == 'http://localhost:8000':
+        baseurl = args.server + '/etcapi/'
+    else:
+        baseurl = args.server + '/api/'
 
     url = baseurl + getEtcUrl(args.etcname)
 

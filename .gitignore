@@ -5,3 +5,5 @@ etc_input_files/*
 output_CRIRES_ETC_command_line/*
 !etc_input_files/.gitkeep
 !output_CRIRES_ETC_command_line/.gitkeep
+BACKUP_*
+.ipynb_checkpoints/

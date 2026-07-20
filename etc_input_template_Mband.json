@@ -1,43 +1,43 @@
 {
+  "formatVersion": 1,
   "target": {
     "morphology": {
       "morphologytype": "point"
     },
     "sed": {
-      "sedtype": "spectrum",
-      "spectrum": {
-        "spectrumtype": "blackbody",
-        "params": {
-          "temperature": 7500
-        }
-      },
-      "extinctionav": 0
+        "sedtype": "spectrum",
+        "spectrum": {
+            "spectrumtype": "blackbody",
+            "params": {
+                "temperature": 7500.0
+            }
+        },
+        "extinctionav": 0
     },
     "brightness": {
-      "brightnesstype": "mag",
-      "magband": "K",
-      "mag": 6.41,
-      "magsys": "vega"
+        "brightnesstype": "mag",
+        "magband": "K",
+        "mag": 6.41,
+        "magsys": "vega"
     }
   },
   "sky": {
-    "airmass": 1.2,
-    "moon_fli": 0.5,
-    "pwv": 2.5
+      "airmass": 1.2,
+      "fli": 0.5,
+      "waterVapour": 2.5,
+      "moonDistance": 30,
+      "airglowEnabled": false
   },
-  "seeingiqao": {
-    "mode": "aongs",
-    "aperturepix": 15,
-    "params": {
-      "gsmag": 6.2,
-      "turbulence_category": 50
-    }
+  "seeing": {
+      "SEQ.NGS.MAG": 6.2,
+      "turbulence_category": 50,
+      "aperturepix": 15
   },
   "instrument": {
-    "slit": 0.2,
-    "settingkey": "M4519",
-    "polarimetry": "free",
-    "order": [
+    "INS.WLEN.CWLEN": 4186.838,
+    "INS.SLIT1.NAME": "w_0.2",
+    "ins_configuration": "spec_ngs",
+    "orders_list": [
       16,
       15,
       14,
@@ -47,47 +47,43 @@
     ]
   },
   "timesnr": {
-    "DET1.NDIT": 1,
-    "DET1.DIT": 300
+      "DET1.DIT": 40,
+      "DET1.NDIT": 1
   },
   "output": {
-    "throughput": {
-      "atmosphere": true,
-      "telescope": true,
-      "instrument": true,
-      "blaze": true,
-      "enslittedenergy": true,
-      "detector": true,
-      "totalinclsky": true
-    },
-    "snr": {
-      "snr": true,
-      "noise_components": true
-    },
-    "sed": {
-      "target": true,
-      "sky": true
-    },
-    "signals": {
-      "obstarget": true,
-      "obssky": true,
-      "obstotal": true
-    },
-    "maxsignals": {
-      "maxpixeltarget": true,
-      "maxpixelsky": true,
-      "maxpixeltotal": true
-    },
-    "dispersion": {
-      "dispersion": true
-    },
-    "psf": {
-      "psf": true
-    },
-    "maxSignals": {
-      "snr": true,
-      "noise_components": true
-    }
+      "throughput": {
+          "atmosphere": true,
+          "telescope": true,
+          "instrument": true,
+          "blaze": true,
+          "enslittedenergy": true,
+          "detector": true,
+          "totalinclsky": true
+      },
+      "snr": {
+          "snr": true,
+          "noise_components": true
+      },
+      "sed": {
+          "target": true,
+          "sky": true
+      },
+      "signals": {
+          "obstarget": true,
+          "obssky": true,
+          "obstotal": true
+      },
+      "maxsignals": {
+          "maxpixeltarget": true,
+          "maxpixelsky": true,
+          "maxpixeltotal": true
+      },
+      "dispersion": {
+          "dispersion": true
+      },
+      "psf": {
+          "psf": true
+      }
   },
   "instrumentName": "crires2"
 }
